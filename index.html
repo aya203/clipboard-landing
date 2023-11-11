@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,800&family=Roboto:ital,wght@0,100;1,100&family=Rubik:wght@300;400;500;600;700;800&family=Sofia&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="webfonts/all.min.css">
+  <link rel="stylesheet" href="webfonts/normalize.css">
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: 'Bai Jamjuree', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-lg ">
+  <img class="max-[500px]:block" src="images/bg-header-desktop.png" alt="">
+  <div class="container max-[500px]:px-10">
+    <div class="copy  text-center ">
+      <img class="mx-auto" src="images/logo.svg" alt="">    
+      <div class="text-center flex flex-col justify-center items-center max-[500px]:mt-10">
+        <h1 class="font-bold max-[500px]:text-3xl text-gray-600 mt-10 text-5xl">A history of everything you copy</h1>
+        <p class=" w-3/5 mt-10 max-[500px]:mt-6 my-5 text-slate-400">Clipboard allows you to track and organize everything you 
+          copy. Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+      <div class="download flex justify-center items-center max-[500px]:flex-col">
+        <button class=" cursor-pointer mr-5 max-[500px]:mr-0 text-sm w-52 rounded-full bg-teal-500 py-3 px-10 text-white hover:shadow-md hover:shadow-green-300 hover:duration-1000">Download for iOS</button>
+        <button class="max-[500px]:mt-5 cursor-pointer text-sm w-52 px-10 py-3 rounded-full bg-blue-700 text-white hover:shadow-md hover:shadow-cyan-200 hover:duration-1000">Download for Mac</button>
+      </div>
+    </div> 
+    <div class="snipptes text-center">
+      <h2 class="max-[500px]:mb-5 max-[500px]:text-3xl font-bold mt-28  max-[500px]:mt-16 text-5xl text-gray-600">Keep track of your snippets</h2>
+      <p class="w-7/12 mx-auto  mt-10 text-slate-400">Clipboard instantly stores any item you copy in the cloud. meaning you can access
+        your snippetes immmediately on ail your devices. Our Mac and iOS help you organize everything  
+      </p>
+    </div>
+    <div class="devises max-[500px]:mt-5  mt-28 flex  justify-between items-center max-[500px]:flex-col max-[500px]:text-center">
+      <img class="w-5/12 max-[500px]:w-full ml-0" src="images/image-computer.png" alt="">
+      <div class="info w-52 flex-1 mx-20 max-[500px]:mt-10">
+        <div class="search mb-14 ">
+          <h3 class="text-2xl text-gray-600 font-bold">Quick Search</h3>
+          <p class="max-[500px]:w-full max-[800px]:w-fit  w-96 text-slate-400">Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div class="sync mb-14">
+          <h3 class="text-2xl text-gray-600 font-bold">iCloud Sync</h3>
+          <p class="max-[500px]:w-full max-[800px]:w-fit  w-96 text-slate-400">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="history mb-14">
+          <h3 class="text-2xl text-gray-600 font-bold">Complete History</h3>
+          <p class="max-[500px]:w-full max-[800px]:w-fit  w-96 text-slate-400">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>  
+    <div class="access text-center " >
+      <h4 class="max-[500px]:mb-5 max-[500px]:text-3xl max-[500px]:mt-3 font-bold mt-28 text-4xl text-gray-600">Access Clipboard anywhere</h4>
+      <p class="w-7/12 mx-auto  mt-3 text-slate-400">Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks.</p>
+    </div>
+    <div class="pada px-20 max-[500px]:p-0  text-center ">
+      <div class="mobiles flex flex-col items-center mt-10">
+        <img class="w-fit" src="/images/image-devices.png" alt="">
+        <div class="flow max-[500px]:mx-auto ">
+          <h5 class=" max-[500px]:mb-5 max-[500px]:text-3xl font-bold mt-28  max-[500px]:mt-16 text-4xl text-gray-600">Supercharge your workflow</h5>
+          <p class="text-slate-400 text-base mt-3">We’ve got the tools to boost your productivity.</p>
+        </div>
+        <div class="data grid grid-cols-3 justify-items-center items-center max-[500px]:grid-cols-1 ">
+          <div class="lists flex items-center mt-5 flex-col  ">
+            <img class="w-fit " src="images/icon-blacklist.svg" alt="">
+            <h3 class="my-5 text-xl text-gray-600 font-bold ">Create blacklists</h3>
+            <p class="text-slate-400 ">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          </div>
+          <div class="text flex items-center flex-col ">
+            <img class="w-fit max-[500px]:mt-5" src="images/icon-text.svg" alt="">
+            <h3 class="my-5 text-xl text-gray-600 font-bold">Plain text snippets</h3>
+            <p class="text-slate-400 ">Remove unwanted formatting from copied text for a consistent look.</p>
+          </div>
+          <div class="sneak flex items-center flex-col">
+            <img class="w-fit max-[500px]:mt-5" src="images/icon-preview.svg" alt="">
+            <h3 class="my-5 text-xl text-gray-600 font-bold">Sneak preview</h3>
+            <p class="text-slate-400 ">Quick preview of all snippets on your Clipboard for easy access.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="images grid grid-cols-5 gap-10 px-20  mt-20 max-[500px]:grid-cols-1 max-[500px]:justify-items-center">
+      <img class="max-[500px]:min-w-max " src="images/logo-google.png" alt="">
+      <img class="max-[500px]:min-w-max " src="images/logo-ibm.png" alt="">
+      <img class="max-[500px]:min-w-max" src="images/logo-microsoft.png" alt="">
+      <img class="max-[500px]:min-w-max" src="images/logo-hp.png" alt="">
+      <img class="max-[500px]:min-w-max" src="images/logo-vector-graphics.png" alt="">
+    </div>
+    <div class="mix text-center">
+      <h4 class=" max-[500px]:mb-5 max-[500px]:text-3xl font-bold mt-28  max-[500px]:mt-16 text-4xl text-gray-600">Clipboard for iOS and Mac OS</h4>
+      <p class="w-7/12 mx-auto  mt-10 text-slate-400">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+      <div class="download max-[500px]:mt-10 max-[375px]:flex-colmt-6 mt-10">
+        <button class="mr-5 max-[500px]:mr-0 cursor-pointer text-sm w-52 rounded-full shadow-gray-400 shadow-md bg-teal-500 py-3 px-10 text-white hover:shadow-md hover:shadow-green-300 hover:duration-1000">Download for iOS</button>
+        <button class="max-[500px]:mt-5 cursor-pointer text-sm w-52 px-10 py-3 shadow-gray-400 shadow-md rounded-full bg-blue-700 text-white hover:shadow-md hover:shadow-cyan-200 hover:duration-1000">Download for Mac</button>
+      </div>
+    </div>
+    </div> 
+  </div>  
+  <div class="foooter  py-10 px-20 max-[500px]:mx-auto mt-32 bg-gray-100 flex max-[500px]:justify-center items-center justify-between max-[500px]:flex-col">
+    <img class=" max-[300px]:mr-5 w-20 " src="images/logo.svg" alt="">
+    <div class="connect  grid grid-cols-3 gap-10 max-[500px]:gap-8 max-[500px]:justify-items-center max-[500px]:my-10 max-[500px]:grid-cols-1">
+      <span class="max-[300px]:mr-5">FAQs</span>
+      <span>Contact Us</span>
+      <span>Privacy Policy</span>
+      <span>Press Kit</span>  
+      <span>Install Guide</span>
+    </div>
+    <div class="media max-[300px]:mr-16 flex justify-between items-center gap-5">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-twitter.svg" alt="">
+      <img src="images/icon-instagram.svg" alt="">
+    </div>
+  </div>
+</body>
+</html>
